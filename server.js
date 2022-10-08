@@ -9,7 +9,7 @@ app.use(express.static('public'))
 const io = socket(server)
 
 io.on('connection', (socket) => {
-	console.log(socket.id)
+	console.log(socket.id);
 	
 
 	socket.on('chat', data => {
